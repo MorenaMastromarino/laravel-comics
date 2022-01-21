@@ -1,0 +1,14 @@
+@mixin center-flex($type){
+  display: flex;
+  align-items: center;
+  @if $type == 'between'{
+    justify-content: space-between;
+  } @else if $type == 'center'{
+    justify-content: center;
+  }
+}
+
+@mixin flex-wrap() {
+  display: flex;
+  flex-wrap: wrap;
+}
