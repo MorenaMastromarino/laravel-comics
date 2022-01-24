@@ -9,9 +9,11 @@
   <nav>
     <ul>
 
-      @foreach (config('menu') as $link)
+      @foreach ($links as $link)
         <li>
-          <a class="{{ (Route::currentRouteName() === $link['route']) ? 'active' : ''}}" href="#">{{ $link['text'] }}</a>
+          <a class="{{ (Route::currentRouteName() === $link['route']) ? 'active' : ''}}" href="#">
+            {{ $link['text'] }}
+          </a>
         </li>
       @endforeach
       

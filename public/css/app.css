@@ -84,6 +84,65 @@ header li a:hover, header li a.active {
   color: #0282F9;
 }
 
+main .jumbotron {
+  height: 300px;
+  background-image: url(../img/jumbotron.jpg);
+  background-size: cover;
+}
+main .current-series {
+  background-color: #1c1c1c;
+}
+main .current-series .container {
+  position: relative;
+  padding-top: 35px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+main .current-series .container #current-btn {
+  position: absolute;
+  left: 0;
+  top: -35px;
+}
+main .current-series .container .cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .serie-card {
+  flex-basis: 16.6666666667%;
+  border: 15px solid #1c1c1c;
+  color: #fff;
+}
+main .serie-card .image-box {
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+main .serie-card h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+main .buy-comics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+  background-color: #0282F9;
+  color: #fff;
+}
+main .buy-comics li {
+  display: inline-block;
+  padding: 0 30px;
+}
+main .buy-comics li img {
+  width: 50px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+main .buy-comics li a {
+  text-transform: uppercase;
+  color: #fff;
+}
+
 footer .footer-top {
   display: flex;
   align-items: center;
